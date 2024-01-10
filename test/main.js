@@ -27,7 +27,7 @@ describe('DOM', () => {
 		}
 	});
 
-	it('should have 3 section elements', () => {
+	it('should have three section elements', () => {
 		const sectionElements = document.querySelectorAll('section');
 
 		assert.equal(sectionElements.length, 3);
