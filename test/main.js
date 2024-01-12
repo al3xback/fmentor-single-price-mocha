@@ -28,35 +28,35 @@ describe('DOM', () => {
 	});
 
 	it('should have three section elements', () => {
-		const sectionElements = document.querySelectorAll('section');
+		const sectionEls = document.querySelectorAll('section');
 
-		assert.equal(sectionElements.length, 3);
+		assert.equal(sectionEls.length, 3);
 	});
 
 	it("should have a first section element with a class of 'card__block--join-community'", () => {
-		const sectionElements = document.querySelectorAll('section');
-		const firstSectionElement = sectionElements[0];
+		const sectionEls = document.querySelectorAll('section');
+		const firstSectionEl = sectionEls[0];
 
 		assert.match(
-			firstSectionElement.className,
+			firstSectionEl.className,
 			/card__block--join-community/
 		);
 	});
 
 	it("should have a second section element with a class of 'card__block--monthly-subsription'", () => {
-		const sectionElements = document.querySelectorAll('section');
-		const secondSectionElement = sectionElements[1];
+		const sectionEls = document.querySelectorAll('section');
+		const secondSectionEl = sectionEls[1];
 
 		assert.match(
-			secondSectionElement.className,
+			secondSectionEl.className,
 			/card__block--monthly-subsription/
 		);
 	});
 
 	it("should have a third section element with a class of 'card__block--why-us'", () => {
-		const sectionElements = document.querySelectorAll('section');
-		const thirdSectionElement = sectionElements[2];
+		const sectionEls = document.querySelectorAll('section');
+		const thirdSectionEl = sectionEls[2];
 
-		assert.match(thirdSectionElement.className, /card__block--why-us/);
+		assert.match(thirdSectionEl.className, /card__block--why-us/);
 	});
 });
