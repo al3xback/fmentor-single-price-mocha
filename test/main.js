@@ -37,10 +37,7 @@ describe('DOM', () => {
 		const sectionEls = document.querySelectorAll('section');
 		const firstSectionEl = sectionEls[0];
 
-		assert.match(
-			firstSectionEl.className,
-			/card__block--join-community/
-		);
+		assert.match(firstSectionEl.className, /card__block--join-community/);
 	});
 
 	it("should have a second section element with a class of 'card__block--monthly-subsription'", () => {
